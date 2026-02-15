@@ -1,0 +1,77 @@
+{
+  "name": "@excalsoft/eslint-config",
+  "version": "1.0.0",
+  "description": "@excalsoft ESLint config",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "eslintplugin",
+    "eslint-config",
+    "eslint-plugin",
+    "excalsoft"
+  ],
+  "author": {
+    "name": "Excalibur Software",
+    "email": "dev@excalsoft.net"
+  },
+  "license": "MIT",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js"
+  ],
+  "homepage": "https://github.com/benplusplus/eslint-config#readme",
+  "repository": {
+    "url": "git+https://github.com/benplusplus/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/benplusplus/eslint-config/issues"
+  },
+  "scripts": {
+    "changeset": "changeset",
+    "changeset:version": "changeset version && pnpm install",
+    "changeset:publish": "changeset publish",
+    "format": "prettier --cache --write .",
+    "format:check": "prettier --cache --check .",
+    "lint": "eslint .",
+    "typecheck": "tsc"
+  },
+  "private": false,
+  "prettier": "@excalsoft/prettier-config",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": "^18.18.0 || >=20.0.0"
+  },
+  "packageManager": "pnpm@10.29.1",
+  "dependencies": {
+    "@eslint/js": "^9.39.2",
+    "@vitest/eslint-plugin": "^1.6.6",
+    "eslint-plugin-astro": "^1.5.0",
+    "eslint-plugin-import-x": "^4.16.1",
+    "eslint-plugin-jest-dom": "^5.5.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-playwright": "^2.4.1",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-testing-library": "^7.15.4",
+    "globals": "^17.0.0",
+    "typescript-eslint": "^8.52.0"
+  },
+  "devDependencies": {
+    "@changesets/changelog-github": "0.5.2",
+    "@changesets/cli": "2.29.8",
+    "@types/node": "24.10.11",
+    "@types/react": "19.2.13",
+    "@types/react-dom": "19.2.3",
+    "@excalsoft/prettier-config": "1.0.0",
+    "eslint": "9.39.2",
+    "prettier": "3.8.1",
+    "typescript": "5.9.3"
+  }
+}
